@@ -1,0 +1,20 @@
+.chip {
+  border: 1.5px solid var(--color-border);
+  background: var(--color-white);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+
+.chip:focus-visible {
+  outline: 2px solid var(--color-terracota);
+  outline-offset: 2px;
+}
+
+.selected {
+  background: var(--color-terracota);
+  border-color: var(--color-terracota);
+  color: var(--color-white);
+}
