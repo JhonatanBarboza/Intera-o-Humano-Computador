@@ -26,13 +26,14 @@ export function getPostById(id) {
   return POSTS.find((p) => p.id === id);
 }
 
-/** Quantas fotos cada animal tem em public/animais/<id>/ (foto1.jpg, foto2.jpg, foto3.jpg). */
-export const FOTOS_POR_ANIMAL = 3;
-
 /**
- * Caminhos das fotos de um animal servidas de /public (ex: /animais/thor/foto1.jpg).
- * Os arquivos ainda precisam ser adicionados manualmente em public/animais/<id>/.
+ * Caminhos das fotos de um animal, servidas de /public (ex: /animais/thor/foto1.png).
+ * A quantidade varia por animal — vem do campo `totalFotos` de cada registro
+ * em animais.js, que reflete quantas fotos existem de fato em
+ * public/animais/<id>/.
  */
 export function getAnimalFotos(animalId) {
-  return Array.from({ length: FOTOS_POR_ANIMAL }, (_, i) => `/animais/${animalId}/foto${i + 1}.jpg`);
+  const animal = getAnimalById(animalId);
+  const total = animal?.totalFotos ?? 1;
+  return Array.from({ length: total }, (_, i) => `/animais/${animalId}/foto${i + 1}.png`);
 }
