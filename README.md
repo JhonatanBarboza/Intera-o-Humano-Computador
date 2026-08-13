@@ -4,4 +4,4 @@
 
 - [`Docs/`](Docs) — pitch, personas e jornadas do usuário
 - [`Wireframes/`](Wireframes) — wireframes de baixa fidelidade
-- [`telas/`](Wireframes de alta fidelidade) — protótipo navegável de alta fidelidade (HTML/CSS/JS estático, sem backend)
+- [`Wireframes de alta fidelidade/`](Wireframes de alta fidelidade) — protótipo navegável de alta fidelidade (HTML/CSS/JS estático, sem backend)
