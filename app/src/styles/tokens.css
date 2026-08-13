@@ -1,0 +1,82 @@
+/**
+ * Design tokens — Patas que Acolhem
+ * Formalização do que já foi validado no protótipo de alta fidelidade
+ * (Wireframes de alta fidelidade/). Fonte única de verdade para cor,
+ * tipografia, espaçamento, raio e sombra usados pelos componentes.
+ */
+
+:root {
+  /* ---------- Cor ---------- */
+  --color-terracota: #b85042;
+  --color-terracota-dark: #9a3f33;
+  --color-terracota-light: #f3ddd8;
+
+  --color-areia: #e7e8d1;
+  --color-areia-dark: #d9dabd;
+
+  --color-sage: #a7beae;
+  --color-sage-dark: #8aa695;
+
+  --color-text: #3d3d3a;
+  --color-text-muted: #6b6b64;
+  --color-white: #ffffff;
+  --color-border: #e4e2d6;
+
+  --color-success: #4c8c5f;
+  --color-success-bg: #e2f0e5;
+  --color-warning: #b8863f;
+  --color-warning-bg: #f5ead4;
+  --color-neutral-text: #7a7a72;
+  --color-neutral-bg: #eeeee6;
+
+  /* aliases semânticos */
+  --color-bg: var(--color-white);
+  --color-bg-muted: var(--color-areia);
+  --color-action: var(--color-terracota);
+  --color-action-hover: var(--color-terracota-dark);
+
+  /* ---------- Tipografia ---------- */
+  --font-heading: Georgia, Cambria, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --text-xs: 0.75rem;    /* 12px — legendas, metadados */
+  --text-sm: 0.8125rem;  /* 13px — texto secundário */
+  --text-base: 0.875rem; /* 14px — corpo padrão */
+  --text-md: 1rem;       /* 16px — corpo destacado */
+  --text-lg: 1.125rem;   /* 18px — subtítulos */
+  --text-xl: 1.25rem;    /* 20px — títulos de card/seção */
+  --text-2xl: 1.5rem;    /* 24px — títulos de página */
+  --text-3xl: 1.875rem;  /* 30px — hero */
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+
+  /* ---------- Espaçamento (escala base 4px) ---------- */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+
+  /* ---------- Raio ---------- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-pill: 999px;
+
+  /* ---------- Sombra ---------- */
+  --shadow-sm: 0 4px 14px rgba(61, 61, 58, 0.08);
+  --shadow-lg: 0 10px 30px rgba(61, 61, 58, 0.16);
+
+  /* ---------- Layout ---------- */
+  --max-width: 1280px;
+  --header-bg: #fbf9f3;
+}

@@ -1,0 +1,10 @@
+.panel {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+}
+
+.panel + .panel {
+  margin-top: var(--space-5);
+}

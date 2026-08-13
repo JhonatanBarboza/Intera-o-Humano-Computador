@@ -1,0 +1,16 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--color-areia);
+  color: var(--color-text);
+  font-weight: var(--font-weight-semibold);
+}
+
+.accent {
+  background: var(--color-terracota-light);
+  color: var(--color-terracota-dark);
+}
