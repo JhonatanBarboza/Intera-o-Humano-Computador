@@ -1,0 +1,38 @@
+export const POSTS = [
+  {
+    id: "resgate-vila-nery",
+    abrigoId: "esperanca",
+    data: "2026-04-12",
+    dataFormatada: "12 Abr 2026",
+    tipo: "resgate",
+    titulo: "Resgate de 3 filhotes na Vila Nery",
+    resumo: "Três filhotinhos foram resgatados e já estão em tratamento no abrigo. Em breve estarão disponíveis para adoção!",
+  },
+  {
+    id: "evento-parque-ecologico",
+    abrigoId: "esperanca",
+    data: "2026-04-05",
+    dataFormatada: "05 Abr 2026",
+    tipo: "evento",
+    titulo: "Evento de adoção no Parque Ecológico",
+    resumo: "Tivemos um dia incrível! 6 animais encontraram um novo lar. Obrigado a todos que participaram.",
+  },
+  {
+    id: "campanha-castracao",
+    abrigoId: "patasunidas",
+    data: "2026-03-28",
+    dataFormatada: "28 Mar 2026",
+    tipo: "evento",
+    titulo: "Campanha de castração popular em Ribeirão Preto",
+    resumo: "Mais de 40 castrações realizadas em parceria com a clínica veterinária municipal.",
+  },
+  {
+    id: "resgate-gatos-feira",
+    abrigoId: "larbichanos",
+    data: "2026-03-15",
+    dataFormatada: "15 Mar 2026",
+    tipo: "resgate",
+    titulo: "Resgate de colônia de gatos na Feira Coberta",
+    resumo: "Cinco gatos que viviam nos arredores da feira municipal foram resgatados e castrados.",
+  },
+];

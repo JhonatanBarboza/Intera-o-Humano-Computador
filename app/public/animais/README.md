@@ -1,0 +1,24 @@
+# Fotos dos animais
+
+Cada animal tem uma pasta com o mesmo `id` usado em `src/data/animais.js`.
+As fotos são nomeadas em sequência, começando em `foto1`:
+
+```
+public/animais/thor/foto1.png
+public/animais/bento/foto1.png
+public/animais/bento/foto2.png
+public/animais/bento/foto3.png
+```
+
+A quantidade de fotos varia por animal — o campo `totalFotos` em cada
+registro de `animais.js` precisa bater com o número de arquivos presentes
+na pasta correspondente (`getAnimalFotos()` em `src/data/index.js` usa
+esse campo para montar os caminhos).
+
+Pastas atuais: `thor`, `luna`, `bento`, `mia`, `toby`, `nina`, `mel`,
+`gaia`, `pit`.
+
+- Formato: `.png`.
+- Se adicionar mais fotos a um animal (ou um animal novo), atualize
+  `totalFotos` (e, se for animal novo, crie o registro completo) em
+  `src/data/animais.js`.
