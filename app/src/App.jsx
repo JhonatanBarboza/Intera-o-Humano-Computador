@@ -11,7 +11,7 @@ import { PaginaNaoEncontrada } from "./pages/PaginaNaoEncontrada/PaginaNaoEncont
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/animal/:id" element={<PerfilAnimal />} />
       <Route path="/abrigos" element={<Abrigos />} />
       <Route path="/abrigo/:id" element={<PerfilAbrigo />} />

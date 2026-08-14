@@ -1,3 +1,4 @@
+import { ArrowRight, Cat, Dog, Heart, Mars, MapPin, PawPrint, Venus } from "lucide-react";
 import { getAbrigoById } from "../../data";
 import { useFavorites } from "../../hooks/useFavorites";
 import { StatusBadge } from "../StatusBadge/StatusBadge";
@@ -5,10 +6,17 @@ import { Chip } from "../Chip/Chip";
 import { Button } from "../Button/Button";
 import styles from "./AnimalCard.module.css";
 
+const ESPECIE_ICON = {
+  Cachorro: Dog,
+  Gato: Cat,
+};
+
 export function AnimalCard({ animal }) {
   const abrigo = getAbrigoById(animal.abrigoId);
   const { isFavorito, toggleFavorito } = useFavorites();
   const fav = isFavorito(animal.id);
+  const EspecieIcon = ESPECIE_ICON[animal.especie] ?? PawPrint;
+  const SexoIcon = animal.sexo === "Macho" ? Mars : Venus;
 
   return (
     <article className={styles.card}>
@@ -26,25 +34,31 @@ export function AnimalCard({ animal }) {
             toggleFavorito(animal.id);
           }}
         >
-          {fav ? "♥" : "♡"}
+          <Heart size={18} fill={fav ? "currentColor" : "none"} />
         </button>
-        <span className={styles.emoji} aria-hidden="true">
-          {animal.icone}
-        </span>
+        <EspecieIcon className={styles.especieIcon} aria-hidden="true" />
       </div>
 
       <div className={styles.body}>
         <h3 className={styles.name}>{animal.nome}</h3>
         <div className={styles.meta}>
-          <span>{animal.sexo === "Macho" ? "♂" : "♀"} {animal.idade}</span>
-          <Chip>🐾 {animal.porte}</Chip>
-          <Chip accent>♥ {animal.temperamento}</Chip>
+          <span>
+            <SexoIcon size={14} /> {animal.idade}
+          </span>
+          <Chip>
+            <PawPrint size={12} /> {animal.porte}
+          </Chip>
+          <Chip accent>
+            <Heart size={12} fill="currentColor" /> {animal.temperamento}
+          </Chip>
         </div>
         <p className={styles.desc}>{animal.resumo}</p>
         <div className={styles.footer}>
-          <span className={styles.local}>📍 {abrigo.nome}</span>
+          <span className={styles.local}>
+            <MapPin size={13} /> {abrigo.nome}
+          </span>
           <Button to={`/animal/${animal.id}`} variant="secondary" size="sm">
-            Ver mais →
+            Ver mais <ArrowRight size={14} />
           </Button>
         </div>
       </div>

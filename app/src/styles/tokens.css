@@ -29,6 +29,14 @@
   --color-neutral-text: #7a7a72;
   --color-neutral-bg: #eeeee6;
 
+  /* acentos suaves — usados nos ícones de dados do perfil do animal */
+  --color-rosa-light: #f7dde3;
+  --color-rosa-dark: #b8546f;
+  --color-laranja-light: #fbe4cd;
+  --color-laranja-dark: #c17a2e;
+  --color-azul-light: #dde8f7;
+  --color-azul-dark: #3b6ea5;
+
   /* aliases semânticos */
   --color-bg: var(--color-white);
   --color-bg-muted: var(--color-areia);

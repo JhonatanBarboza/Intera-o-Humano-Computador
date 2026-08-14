@@ -6,7 +6,7 @@ export function AnimalGrid({ animais, emptyTitle = "Nenhum animal encontrado", e
   if (!animais.length) {
     return (
       <div className={styles.grid}>
-        <EmptyState icon="🐾" title={emptyTitle} description={emptyDescription} action={emptyAction} />
+        <EmptyState title={emptyTitle} description={emptyDescription} action={emptyAction} />
       </div>
     );
   }

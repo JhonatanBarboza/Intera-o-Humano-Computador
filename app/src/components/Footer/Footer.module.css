@@ -4,3 +4,7 @@
   color: #f3ded9;
   font-size: var(--text-sm);
 }
+
+.heart {
+  vertical-align: -2px;
+}
